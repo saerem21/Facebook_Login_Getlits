@@ -21,6 +21,7 @@
 		0042017A188E5E5900A7FEF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0042015C188E5E5900A7FEF8 /* UIKit.framework */; };
 		00420182188E5E5900A7FEF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00420180188E5E5900A7FEF8 /* InfoPlist.strings */; };
 		00420184188E5E5900A7FEF8 /* Facebook_Login_GetlitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00420183188E5E5900A7FEF8 /* Facebook_Login_GetlitsTests.m */; };
+		0042018E188E5E7200A7FEF8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0042018D188E5E7200A7FEF8 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0042017F188E5E5900A7FEF8 /* Facebook_Login_GetlitsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Facebook_Login_GetlitsTests-Info.plist"; sourceTree = "<group>"; };
 		00420181188E5E5900A7FEF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00420183188E5E5900A7FEF8 /* Facebook_Login_GetlitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facebook_Login_GetlitsTests.m; sourceTree = "<group>"; };
+		0042018D188E5E7200A7FEF8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		0042018F188E637C00A7FEF8 /* ball2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0042015B188E5E5900A7FEF8 /* CoreGraphics.framework in Frameworks */,
+				0042018E188E5E7200A7FEF8 /* FacebookSDK.framework in Frameworks */,
 				0042015D188E5E5900A7FEF8 /* UIKit.framework in Frameworks */,
 				00420159188E5E5900A7FEF8 /* Foundation.framework in Frameworks */,
 			);
@@ -82,6 +86,7 @@
 		0042014C188E5E5900A7FEF8 = {
 			isa = PBXGroup;
 			children = (
+				0042018F188E637C00A7FEF8 /* ball2.png */,
 				0042015E188E5E5900A7FEF8 /* Facebook_Login_Getlits */,
 				0042017D188E5E5900A7FEF8 /* Facebook_Login_GetlitsTests */,
 				00420157188E5E5900A7FEF8 /* Frameworks */,
@@ -101,6 +106,7 @@
 		00420157188E5E5900A7FEF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0042018D188E5E7200A7FEF8 /* FacebookSDK.framework */,
 				00420158188E5E5900A7FEF8 /* Foundation.framework */,
 				0042015A188E5E5900A7FEF8 /* CoreGraphics.framework */,
 				0042015C188E5E5900A7FEF8 /* UIKit.framework */,
@@ -377,7 +383,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sdt-1/Documents/Projects/Facebook_Login_Getlits",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Facebook_Login_Getlits/Facebook_Login_Getlits-Prefix.pch";
 				INFOPLIST_FILE = "Facebook_Login_Getlits/Facebook_Login_Getlits-Info.plist";
@@ -390,7 +399,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sdt-1/Documents/Projects/Facebook_Login_Getlits",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Facebook_Login_Getlits/Facebook_Login_Getlits-Prefix.pch";
 				INFOPLIST_FILE = "Facebook_Login_Getlits/Facebook_Login_Getlits-Info.plist";
